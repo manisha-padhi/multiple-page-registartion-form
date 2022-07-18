@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation From</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+    <form action="#">
+    <div class="from second">
+        <div class=" details educational ">
+            <span class="title"> Educational Deatils</span>
+    
+           <div class="fields">
+               <div class="input-field">
+                  <label > HSC Institution Name</label> 
+                   <input type="text" class="inp hsc_school" placeholder="Enter Institute Name" required>
+               </div>
+               <div class="input-field">
+                  <label for= "Hsc Board">HSC Board</label>
+                  <select name="Hsc Board" class="inp hsc_board">
+                    <option value="none">please select board</option>
+                    <option value="cbsc">CBSC</option>
+                    <option value="icsc">ICSC</option>
+                    <option value="state board">State board</option>
+                      
+                  </select>
+               </div>
+    
+               <div class="input-field">
+                  <label>Score in HSC in percentage</label>
+                  <input type="number" class="inp hsc_mark" placeholder="Enter your score" required>
+               </div>
+    
+               <div class="input-field">
+                  <label>SSC Institution Name</label>
+                  <input type="text" class="inp ssc_school" placeholder="Enter Institute Name" required>
+               </div>
+               <div class="input-field">
+                   <label for= "Ssc Board">SSC Board</label>
+                   <select name="Ssc Board"  class="inp ssc_board">
+                     <option value="none">please select board</option>
+                     <option value="cbsc">CBSC</option>
+                     <option value="icsc">ICSC</option>
+                     <option value="state board">State board</option>
+                       
+                   </select>
+               </div>
+    
+               <div class="input-field">
+                  <label>Score in SSC in percentage</label>
+                  <input type="number" class="inp ssc_mark" placeholder="Enter your score" required>
+               </div> 
+               <div class="input-field">
+                   <label>Currently pursuing</label>
+                   <input type="text" class="inp curr_course" placeholder="Enter your course name" required>
+               </div> 
+               <div class="input-field">
+                   <label>Current educational institution name</label>
+                   <input type="text" class="inp curr_institute" placeholder="Enter Institute Name" required>
+               </div>
+               <div class="input-field">
+                   <label>Overall percentage</label>
+                   <input type="number" class="inp curr_perecentage" placeholder="Enter your score" required>
+               </div>
+               <div class="input-field">
+                    <label >Currently backlogs if any</label> 
+                    <input type="text" class="inp curr_backlog" placeholder="yes/no" required>
+               </div>
+           <a href="upload.html" class="btnText">Next</a>
+        </div>
+    </div> 
+    </div>
+</form>
+</div>
+<script>
+    window.onload = function(){
+       localStorage.setItem('currUser',location.search.split('=')[1]);
+    }
+</script>
+<script src="./index.js"></script>
+</body>
+</html>
